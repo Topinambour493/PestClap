@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width:100%;
+    background-color: rgba(80, 16, 16, 0.808);
+    font-size: 1vmin;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.jeu {
+    align-self: center;
+    width: 100vmin;
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.haut{
+    position: relative;
+    height: 62vmin;
+    background-image: url("image/scenered.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    color: gold;
+    
+
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.titre{
+    margin-right:3%;
+    font-size: 6vmin;
+    font-family: fantasy;
+
+}
+
+.top{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+
+
+.clsp,.regles{
+    background-color: grey;
+    font-size:2.8vmin;
+    border: red solid 3px;
+    border-radius: 3px;
+    display:flex;
+    flex-direction: column;
+}
+
+.regles div{
+    text-align: center;
+    cursor:default;
+}
+
+
+.centrescene{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.applause{
+    display: flex; 
+    justify-content: center;
+}
+
+#add{
+    position: absolute;
+    top:30%;
+    max-height:45%;
+    max-width: 45%;
+    object-fit: contain;
+    cursor:pointer;
+}
+
+.bouton_son{
+    max-height:50px;
+    max-width: 50px;
+}
+
+.vide{
+    height: 80%;
+    width: 100%;
+
+}
+
+.basdescene{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+.Mariachi {
+    position: absolute;
+    left: 35%;
+    bottom: 1%;
+    max-width:30%;
+    max-height:30%;
+    object-fit: contain;  
+}
+
+.Ours {
+    position: absolute;
+    left: 17%;
+    bottom: 1%;
+    max-width:30%;
+    max-height:30%;
+    object-fit: contain; 
+}
+
+.DonaldTrump {
+    position: absolute;
+    right: 23%;
+    bottom: 0.5%;
+    max-width:25%;
+    max-height:25%;
+    object-fit: contain; 
+}
+
+.BongoCat {
+    position: absolute;
+    left: 1%;
+    bottom: 2%;
+    max-width:15%;
+    max-height:15%;
+    object-fit: contain; 
+}
+
+.Patoche {
+    position: absolute;
+    right: 10%;
+    bottom: 0%;
+    max-width:20%;
+    max-height:20%;
+    object-fit: contain; 
+}
+
+.Singe{
+    position: absolute;
+    right: -1%;
+    bottom: 0%;
+    max-width:20%;
+    max-height:20%;
+    object-fit: contain;
+
+}
+
+.Dragon{
+    position: absolute;
+    left: 2%;
+    bottom:30%;
+    max-width:40%;
+    max-height:40%;
+    object-fit: contain;
+}
+
+.Dumbo{
+    position: absolute;
+    right: 2%;
+    bottom:30%;
+    max-width:45%;
+    max-height:45%;
+    object-fit: contain;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+.bas{
+    align-items: center;
+    display: flex;
+    background: chocolate;
+    justify-content: center;
+}
+
+
+
+#reset{
+    margin-right: 5px;
+}
+
+button{ 
+    align-self: center;
+    border-radius: 5px;
+    font-size: 2.5vmin;
+    border: -10px;
+    
+}
+
+
+@keyframes bounce { 
+    0% { transform: scale(1) translateY(0); }
+    50% { transform: scale(0.8, 1.1) translateY(-10%); }
+    100% { transform: translateY(0); }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PestClap</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" sizes="16x16"  href="image/favicons/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div class="jeu">
+            <div class="haut">
+                <div class="header">
+                    <div class="leclicker">
+                        <div class="clsp">
+                            <section id="clap">
+                            </section>
+                            <section id="power_clap">
+                            </section>
+                            <section id="Cps">
+                            </section>
+                            <section id="total_minions">
+                            </section>
+                        </div>
+                    </div>
+                    <div class="titre">PestClap</div>
+                </div>
+                    <div class="applause">
+                        <img  src="image/Applause.png" id="add" onclick="addClap()" >
+                    </div>
+                <div class="centrescene">
+                    <div class="basdescene">
+                        <img src="image/donald-trump-floss-unscreen.gif" class="DonaldTrump a2">
+                        <img src="image/giphy-unscreen.gif" class="Ours a1">
+                        <img src="image/mariachi.gif" class="Mariachi a0" >
+                        <img src="image/bongocat.gif" class="BongoCat a3" >
+                        <img src="image/patoche-unscreen.gif" class="Patoche a4">
+                        <img src="image/monkey-annoying-unscreen.gif" class="Singe a5">
+                        <img src="image/dragon.gif" class="Dragon a6">
+                        <img src="image/dumbo.gif" class="Dumbo a7">
+                    </div>      
+                </div>    
+            </div>
+            <div class="bas">
+                <img class="bouton_son pointer" onclick="gestion_son()">
+                <div class="store">
+                </div>
+                <button class="pointer" id="reset" onclick="reset()">RESET</button>
+            </div>
+            <div class="regles">
+                <div>
+                    Lorsqu'un minion d'un certain type est acheté, le prochain va couter 1,15 fois plus cher
+                </div>
+                <div>
+                    Tous les 20 minions achetés, la valeur du click manuel est multiplié par 2. 
+                </div>
+                <div>
+                    A chaque palier: 25, 50, 100, 250 et 1000 minions d'un même type, ceux-ci vont produire 2x plus de cps.
+                </div>
+            </div>
+        </div>
+        <audio id="musique" src="the-mexican-hat-dance.mp3" loop></audio>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
